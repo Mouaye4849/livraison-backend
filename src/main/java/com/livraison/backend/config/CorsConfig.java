@@ -14,7 +14,11 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(List.of("http://localhost:5173", "http://localhost:8081"));
+        config.setAllowedOrigins(List.of(
+                "http://localhost:5173",
+                "http://localhost:8081",
+                "https://livraison-project-sigma.vercel.app"
+        ));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 
