@@ -15,7 +15,7 @@ import java.util.UUID;
 public class Paiement {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     private Double montantMRU;
