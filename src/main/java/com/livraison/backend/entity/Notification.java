@@ -14,8 +14,8 @@ import java.util.UUID;
 @Builder
 public class Notification {
 
-    @Id
-    @GeneratedValue
+   @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @Enumerated(EnumType.STRING)
