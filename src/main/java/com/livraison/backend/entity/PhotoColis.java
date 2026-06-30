@@ -14,7 +14,7 @@ import java.util.UUID;
 public class PhotoColis {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     private String filename;
