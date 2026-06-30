@@ -18,7 +18,6 @@ public class Trajet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(columnDefinition = "VARCHAR(36)")
     private UUID id;
 
     private String origine;
