@@ -14,7 +14,11 @@ import java.util.UUID;
 @Builder
 public class Notification {
 
+<<<<<<< HEAD
    @Id
+=======
+    @Id
+>>>>>>> 8e53969 (Migration vers Brevo API)
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
